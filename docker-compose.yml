@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  database:
+    image: mysql:5.7
+    ports:
+      - 33060:3306
+    environment:
+      MYSQL_USER: "root"
+      MYSQL_PASSWORD: "root"
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "gonode"
+# Names our volume
+volumes:
+  my-db:
